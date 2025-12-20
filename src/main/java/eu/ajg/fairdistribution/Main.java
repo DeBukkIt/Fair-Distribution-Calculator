@@ -11,7 +11,7 @@ public class Main {
 		FairDistribution fd = new FairDistribution();
 		Map<Integer, List<String>> result = fd.distribute(inputReader.getOptions(), inputReader.getStudentsWithPriorities());
 		
-		ResultWriter resultWriter = new ResultWriter("C:\\Users\\VdF-Steinfurt-5\\Downloads\\result.txt");
+		ResultWriter resultWriter = new ResultWriter(args[2]);
 		resultWriter.write(result, inputReader.getOptions(), inputReader.getStudentsWithPriorities());
 	}
 
