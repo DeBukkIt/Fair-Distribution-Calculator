@@ -8,7 +8,11 @@ import javax.swing.SwingUtilities;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		if (args.length >= 1 && args[0].equalsIgnoreCase("gui")) {
+		if(args.length == 0) {
+			
+			SwingUtilities.invokeLater(() -> new GuiFairDistribution().setVisible(true));
+			
+		} else if (args.length >= 1 && args[0].equalsIgnoreCase("gui")) {
 			
 			SwingUtilities.invokeLater(() -> new GuiFairDistribution().setVisible(true));
 			

@@ -1,4 +1,6 @@
 target/
+output/
+runtime/
 bin/
 pom.xml.tag
 pom.xml.releaseBackup
